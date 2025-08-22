@@ -23,21 +23,21 @@ const handleSearch = async(e)=>{
 }
         
   return (
-    <div className="max-w-md mx-auto p-4">
+    <div className="max-w-md mx-auto  ">
       <input
       onChange={handleSearch}
         type="text"
         placeholder="Search items..."
-        className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full border border-gray-300 px-4 py-1  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
 
-      <ul className="mt-4 space-y-2">
         {filterData&& filterData.map((item, index) => (
+      <ul className="mt-4 space-y-2">
           <li key={index} className="p-2 bg-gray-100 rounded">
             {item}
           </li>
-        ))}
       </ul>
+        ))}
     </div>
   )
 }

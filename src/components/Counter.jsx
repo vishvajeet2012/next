@@ -22,10 +22,10 @@ setCount((prev)=>prev-1)
     <div  className="flex flex-col item-center h-screen justify-center  gap-10 ">
     <h1 className="text-white text-center">Counter Vishvajeet shukla</h1>
 
-    <div  className="flex justify-center items-center  ">
-        <button onClick={decreasment} className="px-4  text-black font-bold bg-white"> -</button>
-        <button className=" px-4 text-black font-bold  transition-all duration-200   bg-white">{count}</button>
-        <button onClick={increment} className="px-4 text-black font-bold bg-white">+</button>
+    <div  className="flex justify-center ` items-center  ">
+        <button onClick={decreasment} className="px-4 py-1 text-black font-bold rounded-l-lg  bg-white"> -</button>
+        <button className=" px-4 text-black font-bold py-1  px-4  transition-all duration-200   bg-white">{count}</button>
+        <button onClick={increment} className="px-4 py-1 text-black font-bold rounded-r-lg bg-white">+</button>
 </div>
     </div>
 
