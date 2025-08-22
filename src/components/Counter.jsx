@@ -24,7 +24,7 @@ setCount((prev)=>prev-1)
 
     <div  className="flex justify-center items-center  ">
         <button onClick={decreasment} className="px-4  text-black font-bold bg-white"> -</button>
-        <button className=" px-4 text-black font-bold  bg-white">{count}</button>
+        <button className=" px-4 text-black font-bold  transition-all duration-200   bg-white">{count}</button>
         <button onClick={increment} className="px-4 text-black font-bold bg-white">+</button>
 </div>
     </div>
