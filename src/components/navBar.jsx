@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import SearchFunctionalty from "./searchFunctionalty";
 
 export default function NavBar() {
@@ -9,14 +9,16 @@ export default function NavBar() {
 
   return (
     <>
-      <header className="text-white bg-white p-2 ">
-        <nav className=" flex gap-4  justify-start items-center  text-black ">
-          <div className=" flex gap-4  text-black">
+      <header className="text-white bg-black p-2 ">
+        <nav className=" flex gap-4  justify-start items-center ">
+          <div className=" flex gap-4  font-medium font-sans text-white">
             {navLinks &&
               navLinks?.map((value, index) => (
+                <ul key={value?.link}>
                 <Link href={`/${value?.link}`} className=" cursor-pointer p-2" key={index}>
                   <li>{value.navName}</li>
                 </Link>
+              </ul>
               ))}
           </div>
           <div className="flex  items-center">
