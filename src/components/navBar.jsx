@@ -3,6 +3,8 @@ import SearchFunctionalty from "./searchFunctionalty";
 
 export default function NavBar() {
   const navLinks = [
+        { navName: "Home", link: "" },
+
     { navName: "formValidation", link: "form" },
     { navName: "counter", link: "counter" },
   ];
@@ -15,7 +17,7 @@ export default function NavBar() {
             {navLinks &&
               navLinks?.map((value, index) => (
                 <ul key={value?.link}>
-                <Link href={`/${value?.link}`} className=" cursor-pointer p-2" key={index}>
+                <Link to={`/${value?.link}`} className=" cursor-pointer p-2" key={index}>
                   <li>{value.navName}</li>
                 </Link>
               </ul>

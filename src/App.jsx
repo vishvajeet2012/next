@@ -4,6 +4,8 @@ import viteLogo from "/vite.svg";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from "./Homepage";
 import NavBar from "./components/navBar";
+import SearchFunctionalty from "./components/searchFunctionalty";
+import Counter from "./components/Counter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +15,7 @@ function App() {
 <NavBar/>
           <Routes>
       <Route path='/' element={<Homepage />} />
-
+            <Route path="/counter" element={<Counter/>}/>
 
 </Routes>
 
