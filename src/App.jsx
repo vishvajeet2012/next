@@ -6,6 +6,7 @@ import Homepage from "./Homepage";
 import NavBar from "./components/navBar";
 import SearchFunctionalty from "./components/searchFunctionalty";
 import Counter from "./components/Counter";
+import FromValidation from "./components/formValidation";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
         <>
 <NavBar/>
           <Routes>
+          <Route path='/formValidation' element={<FromValidation/>}/>
       <Route path='/' element={<Homepage />} />
             <Route path="/counter" element={<Counter/>}/>
 

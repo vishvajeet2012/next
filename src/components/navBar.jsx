@@ -5,7 +5,7 @@ export default function NavBar() {
   const navLinks = [
         { navName: "Home", link: "" },
 
-    { navName: "formValidation", link: "form" },
+    { navName: "formValidation", link: "formValidation" },
     { navName: "counter", link: "counter" },
   ];
 
